@@ -27,7 +27,6 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/vpatelalk/cpiklibraryrepo.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
 
   s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
   
