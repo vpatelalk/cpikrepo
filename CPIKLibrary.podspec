@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vipul Patel' => 'vpatel@alk.com' }
-  s.source           = { :git => 'https://github.com/vpatelalk/cpikrepo.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/vpatelalk/cpikrepo.git' }
 
   s.ios.deployment_target = '9.0'
 
