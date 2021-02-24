@@ -29,6 +29,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
+
+  s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
   
    s.resource_bundles = {
      'CPIKLibrary' => ['CPIKLibrary/Assets/copilot_resources.bundle']
