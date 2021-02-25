@@ -24,16 +24,16 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vipul Patel' => 'vpatel@alk.com' }
-  s.source           = { :git => 'https://github.com/vpatelalk/cpikrepo.git' }
+  s.source           = { :http => 'https://github.com/vpatelalk/cpikrepo/blob/main/CPIKLibrary/Classes/CoPilotIntegrationKit.zip?raw=true' }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
+  #s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
 
   s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
   
-   s.resource_bundles = {
-     'CPIKLibrary' => ['CPIKLibrary/Assets/copilot_resources.bundle']
-   }
+   #s.resource_bundles = {
+   #  'CPIKLibrary' => ['CPIKLibrary/Assets/copilot_resources.bundle']
+   #}
 
 end
