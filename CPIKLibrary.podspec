@@ -31,14 +31,10 @@ TODO: Add long description of the pod here.
   #s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
 
   s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
-
-  s.framework  = 'ExternalAccessory'
   
    #s.resource_bundles = {
    #  'CPIKLibrary' => ['CPIKLibrary/Assets/copilot_resources.bundle']
    #}
 
-	s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}		
-	s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}	
 
 end
