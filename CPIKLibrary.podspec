@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vipul Patel' => 'vpatel@alk.com' }
-  s.source           = { :http => 'https://github.com/vpatelalk/cpikrepo/blob/main/CPIKLibrary/Classes/CoPilotIntegrationKit.zip?raw=true' }
+  s.source           = { :http => 'https://github.com/vpatelalk/cpikrepo/blob/main/CPIKLibrary/Classes/CoPilotIntegrationKit%2013.08.17.zip?raw=true' }
 
   s.ios.deployment_target = '9.0'
 
@@ -32,9 +32,17 @@ TODO: Add long description of the pod here.
 
   s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
   
-   #s.resource_bundles = {
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
+  #s.resource_bundles = {
    #  'CPIKLibrary' => ['CPIKLibrary/Assets/copilot_resources.bundle']
    #}
 
+s.framework  = 'CoreTelephony','CoreLocation', 'AVFoundation', 'Contacts','Webkit', 'ContactsUI','Security','Accounts','AdSupport','Social','CoreAudio','CFNetwork','AddressBook','AddressBookUI','AssetsLibrary','AudioToolbox','CoreGraphics','ExternalAccessory','Foundation','MediaPlayer','OpenGLES','QuartzCore','StoreKit','SystemConfiguration','UIKit','MessageUI','CoreFoundation'
+:w
+#s.dependency 'libc++'
+
+s.library = 'c++','stdc++','z','xml2','sqlite3'
 
 end
