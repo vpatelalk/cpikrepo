@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPIKLibrary'
-  s.version          = '10.19.0.1291'
+  s.version          = '10.19.0.1292'
   s.summary          = 'CPIKLibrary for iOS'
 
   s.description      = <<-DESC
