@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'http://trimble.com'
-  #s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
+  #s.homepage         = 'http://trimble.com'
+  s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vipul Patel' => 'vpatel@alk.com' }
   s.source           = { :http => 'https://dl.dropboxusercontent.com/s/spek5ar5ysipq5w/CoPilotIntegrationKit.zip' }
@@ -42,13 +42,12 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
-  #s.resource_bundles = {
-   #  'CPIKLibrary' => ['CPIKLibrary/Assets/copilot_resources.bundle']
-   #}
+  s.resource_bundles = {
+     'CPIKLibrary' => ['CPIKLibrary/resources/copilot_resources.bundle']
+   }
 
 s.framework  = 'CoreTelephony','CoreLocation', 'AVFoundation', 'Contacts','Webkit', 'ContactsUI','Security','Accounts','AdSupport','Social','CoreAudio','CFNetwork','AddressBook','AddressBookUI','AssetsLibrary','AudioToolbox','CoreGraphics','ExternalAccessory','Foundation','MediaPlayer','OpenGLES','QuartzCore','StoreKit','SystemConfiguration','UIKit','MessageUI','CoreFoundation'
-:w
-#s.dependency 'libc++'
+
 
 s.library = 'c++','stdc++','z','xml2','sqlite3'
 
