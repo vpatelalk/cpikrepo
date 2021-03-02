@@ -11,44 +11,31 @@ Pod::Spec.new do |s|
   s.version          = '10.19.0.1291'
   s.summary          = 'CPIKLibrary for iOS'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Embed CoPilot within your own mobile application to create an enhanced, single-application user experience. SDK Libraries provide the deepest level of configuration and customization available in CoPilot.
                        DESC
 
-  #s.homepage         = 'http://trimble.com'
-  s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
+  s.homepage         = 'https://developer.copilotpro.com/'
+  #s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Vipul Patel' => 'vpatel@alk.com' }
-  s.source           = { :http => 'https://dl.dropboxusercontent.com/s/spek5ar5ysipq5w/CoPilotIntegrationKit.zip' }
-
-  #s.source           = { :http => 'https://github.com/vpatelalk/cpikrepo/blob/main/CPIKLibrary/Classes/CoPilotIntegrationKit%2013.08.17.zip?raw=true' }
+  s.author           = { 'Vipul Patel' => 'vipul_patel@trimble.com' }
+  s.source           = { :http => 'https://dl.dropboxusercontent.com/s/okforehjzh0y2qi/CoPilotIntegrationKit.zip' }
 
   s.ios.deployment_target = '9.0'
 
   s.source_files  = 'CoPilotIntegrationKit.framework/Headers/*.h'
 
-
-  #s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
-
-  #s.ios.vendored_frameworks = 'CoPilotIntegrationKit/CoPilotIntegrationKit.framework'
   s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.resource_bundles = {
-     'CPIKLibrary' => ['CPIKLibrary/resources/copilot_resources.bundle']
-   }
+     'copilot_resources' => ['copilot_resources.bundle/*']
+  }
 
-s.framework  = 'CoreTelephony','CoreLocation', 'AVFoundation', 'Contacts','Webkit', 'ContactsUI','Security','Accounts','AdSupport','Social','CoreAudio','CFNetwork','AddressBook','AddressBookUI','AssetsLibrary','AudioToolbox','CoreGraphics','ExternalAccessory','Foundation','MediaPlayer','OpenGLES','QuartzCore','StoreKit','SystemConfiguration','UIKit','MessageUI','CoreFoundation'
+  s.framework  = 'CoreTelephony','CoreLocation', 'AVFoundation', 'Contacts','Webkit',     'ContactsUI','Security','Accounts','AdSupport','Social','CoreAudio','CFNetwork','AddressBook','AddressBookUI','AssetsLibrary','AudioToolbox','CoreGraphics','ExternalAccessory','Foundation','MediaPlayer','OpenGLES','QuartzCore','StoreKit','SystemConfiguration','UIKit','MessageUI','CoreFoundation'
 
 
-s.library = 'c++','stdc++','z','xml2','sqlite3'
-
+ s.library = 'c++','stdc++','z','xml2','sqlite3'
 end

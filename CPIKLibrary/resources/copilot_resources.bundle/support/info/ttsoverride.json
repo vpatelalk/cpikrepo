@@ -1,9 +1,0 @@
-{
-	"Overrides": [
-		{
-			"languages": ["en-us", "en-gb", "en-au"],
-			"key": "rd",
-			"value": "road"
-		}
-	]
-}
