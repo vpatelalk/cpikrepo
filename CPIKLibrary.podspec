@@ -31,8 +31,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
+  s.source_files  = 'CoPilotIntegrationKit.framework/Headers/*.h'
+
+
   #s.source_files = 'CPIKLibrary/Classes/CoPilotIntegrationKit.zip'
 
+  #s.ios.vendored_frameworks = 'CoPilotIntegrationKit/CoPilotIntegrationKit.framework'
   s.ios.vendored_frameworks = 'CoPilotIntegrationKit.framework'
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }

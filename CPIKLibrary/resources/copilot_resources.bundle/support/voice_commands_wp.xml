@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0">
+	<CommandSet xml:lang="en-us">
+		<CommandPrefix> CoPilot </CommandPrefix>
+		<Example> Take me home </Example>
+		<Command Name="takeMe">
+			<Example> Take me home </Example>
+			<ListenFor> [Take me] {favoritePlaces} </ListenFor>
+			<Feedback> Taking you {favoritePlaces} </Feedback>
+			<Navigate Target="/MainPage.xaml"/>
+		</Command>
+
+		<PhraseList Label="favoritePlaces">
+			<Item> home </Item>
+			<Item> to home </Item>
+			<Item> to work </Item>
+		</PhraseList>
+
+	</CommandSet>
+
+	<CommandSet xml:lang="en-gb">
+		<CommandPrefix> CoPilot </CommandPrefix>
+		<Example> Take me home </Example>
+		<Command Name="takeMe">
+			<Example> Take me home </Example>
+			<ListenFor> [Take me] {favoritePlaces} </ListenFor>
+			<Feedback> Taking you {favoritePlaces} </Feedback>
+			<Navigate Target="/MainPage.xaml"/>
+		</Command>
+
+		<PhraseList Label="favoritePlaces">
+			<Item> home </Item>
+			<Item> to home </Item>
+			<Item> to work </Item>
+		</PhraseList>
+
+	</CommandSet>
+
+	<CommandSet xml:lang="de">
+		<CommandPrefix> CoPilot </CommandPrefix>
+		<Example> Bringe mich nach Wohnort </Example>
+		<Command Name="takeMe">
+			<Example> Bringe mich nach Wohnort </Example>
+			<ListenFor> [Bringe mich] {favoritePlaces} </ListenFor>
+			<Feedback> Ich bringe Dich {favoritePlaces} </Feedback>
+			<Navigate Target="/MainPage.xaml"/>
+		</Command>
+
+		<PhraseList Label="favoritePlaces">
+			<Item> Wohnort </Item>
+			<Item> nach Wohnort </Item>
+			<Item> zur Arbeit </Item>
+		</PhraseList>
+
+	</CommandSet>
+
+	<CommandSet xml:lang="fr">
+		<CommandPrefix> CoPilot </CommandPrefix>
+		<Example> Ramène-moi à mon domicile </Example>
+		<Command Name="takeMe">
+			<Example> Ramène-moi à mon domicile </Example>
+			<ListenFor> [Ramène-moi à] {favoritePlaces} </ListenFor>
+			<Feedback> En route vers {favoritePlaces} </Feedback>
+			<Navigate Target="/MainPage.xaml"/>
+		</Command>
+
+		<PhraseList Label="favoritePlaces">
+			<Item> mon domicile </Item>
+			<Item> mon travail </Item>
+		</PhraseList>
+
+	</CommandSet>
+
+	<CommandSet xml:lang="es">
+		<CommandPrefix> CoPilot </CommandPrefix>
+		<Example> Llévame a casa </Example>
+		<Command Name="takeMe">
+			<Example> Llévame a casa </Example>
+			<ListenFor> [Llévame] {favoritePlaces} </ListenFor>
+			<Feedback> Llevándote {favoritePlaces} </Feedback>
+			<Navigate Target="/MainPage.xaml"/>
+		</Command>
+
+		<PhraseList Label="favoritePlaces">
+			<Item> Domicilio </Item>
+			<Item> a Domicilio </Item>
+			<Item> al trabajo </Item>
+		</PhraseList>
+
+	</CommandSet>
+
+	<CommandSet xml:lang="it">
+		<CommandPrefix> CoPilot </CommandPrefix>
+		<Example> Portami a casa </Example>
+		<Command Name="takeMe">
+			<Example> Portami a casa </Example>
+			<ListenFor> [Portami] {favoritePlaces} </ListenFor>
+			<Feedback> Portandoti {favoritePlaces} </Feedback>
+			<Navigate Target="/MainPage.xaml"/>
+		</Command>
+
+		<PhraseList Label="favoritePlaces">
+			<Item> casa </Item>
+			<Item> a casa </Item>
+			<Item> al lavoro </Item>
+		</PhraseList>
+
+	</CommandSet>
+
+	<!-- Other CommandSets for other languages -->
+
+</VoiceCommands>
