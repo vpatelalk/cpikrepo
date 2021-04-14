@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
 Embed CoPilot within your own mobile application to create an enhanced, single-application user experience. SDK Libraries provide the deepest level of configuration and customization available in CoPilot.
                        DESC
 
-  s.homepage         = 'https://developer.copilotpro.com/'
-  #s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
+  #s.homepage         = 'https://developer.copilotpro.com/'
+  s.homepage         = 'https://github.com/vpatelalk/cpikrepo.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vipul Patel' => 'vipul_patel@trimble.com' }
   s.source           = { :http => 'https://dl.dropboxusercontent.com/s/okforehjzh0y2qi/CoPilotIntegrationKit.zip' }
